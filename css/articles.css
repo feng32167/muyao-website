@@ -1,0 +1,160 @@
+.articles-page {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.articles-nav {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #8A2BE2;
+}
+
+.articles-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articles-container h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.featured-articles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.article-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-content {
+    padding: 1.5rem;
+}
+
+.article-content h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.article-content p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.all-articles {
+    margin-top: 4rem;
+}
+
+.articles-table {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-header, .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.table-header {
+    background: #222;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.table-row {
+    color: #fff;
+    border-bottom: 1px solid #222;
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #1a1a1a;
+}
+
+.table-link {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 100%;
+    color: inherit;
+}
+
+.table-row .title {
+    font-weight: 500;
+    color: #fff;
+}
+
+.table-row .source, .table-row .date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .articles-page {
+        padding: 1rem;
+    }
+    
+    .featured-articles {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-header, .table-row, .table-link {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .table-header span:not(:first-child) {
+        display: none;
+    }
+    
+    .table-row .source, .table-row .date {
+        font-size: 0.8rem;
+    }
+} 
