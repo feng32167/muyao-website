@@ -30,4 +30,4 @@
 
 ## 在线预览
 
-访问 GitHub Pages 链接：[MU YAO Website](https://[your-username].github.io/muyao-website) 
+访问 GitHub Pages 链接：[MU YAO Website](https://feng32167.github.io/muyao-website) 
